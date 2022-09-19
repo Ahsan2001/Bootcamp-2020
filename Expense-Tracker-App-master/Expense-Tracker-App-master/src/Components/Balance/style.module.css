@@ -1,0 +1,11 @@
+h3.sub_heading{
+    text-align: center;
+    margin: 0px 0 20px;
+    font-weight: 400;
+}
+
+
+h3.sub_heading span{
+    color: green;
+    font-weight: 600;
+}

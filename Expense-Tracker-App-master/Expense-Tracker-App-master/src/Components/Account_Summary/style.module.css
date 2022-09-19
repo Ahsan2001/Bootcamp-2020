@@ -1,0 +1,29 @@
+.Main_wrap{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+h4{
+    margin: 0 20px ;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+h4.Income {
+    color: green;
+}
+
+h4.Expense {
+    color: rgb(132, 32, 21);
+}
+
+
+
+h4 span{
+    display: block;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+}

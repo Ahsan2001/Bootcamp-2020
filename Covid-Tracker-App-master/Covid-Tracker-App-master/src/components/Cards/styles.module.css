@@ -1,0 +1,17 @@
+h1.head{
+    color: #e8ce2f;
+    font-size: 53px;
+    padding: 30px 0px 30px 58px;
+    position: relative;
+}
+
+
+h1.head::after{
+    content: "";
+    width: 136px;
+    height: 4px;
+    background: #a69c31;
+    position: absolute;
+    bottom: 26px;
+    left: 65px;
+}

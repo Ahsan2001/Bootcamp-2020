@@ -1,0 +1,87 @@
+.main_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main_wrap h2{ 
+    font-weight: 300;
+    width: 80%;
+    border-bottom: 1px solid ;
+    text-align: center;
+}
+
+.main_wrap ul{
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main_wrap ul li{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+.main_wrap ul li{
+    background: transparent;
+}
+
+
+
+.main_wrap ul li.plus span{
+    color: green;
+}
+
+.main_wrap ul li.plus:hover{
+    background: #008000bf;
+    color: #fff;
+}
+
+.main_wrap ul li.plus:hover span{
+     color: #fff;
+}
+
+
+.main_wrap button.clossBtn{
+    position: absolute;
+    top: 30%;
+    left: -6%;
+    opacity: 0;
+    transition: 0.5s;
+    background: rgb(108, 12, 12);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+.main_wrap ul li:hover button.clossBtn{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.main_wrap ul li.minus span{
+    color: rgb(108, 12, 12);
+}
+
+.main_wrap ul li.minus:hover{
+    background: rgb(108 10 12 / 75%);
+    color: #fff;
+}
+
+.main_wrap ul li.minus:hover span{
+     color: #fff;
+}

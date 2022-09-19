@@ -1,0 +1,11 @@
+header{
+    background-color: gray;
+}
+
+.Main{
+   background-color: rgb(222 212 104 / 0%);
+    padding: 15px 45px;
+}
+.logo_main{
+    font-weight: 800 !important;
+}

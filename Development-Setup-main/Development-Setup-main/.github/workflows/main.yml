@@ -1,0 +1,25 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    
+      - uses: actions/checkout@v3
+
+      - name: Install Node js
+        uses: actions/setup-node@v2-beta
+        with:
+           node-version:  12
+
+      - name: Installing Surge
+        run: npm install --global surge 
+      
+      - name: Deploy Site
+        run: surge ./ intro-class.surge.sh/ --token ${{ secrets.INTRO  }}
