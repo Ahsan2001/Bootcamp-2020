@@ -35,6 +35,10 @@ export const options = {
 
 const labels = ['Covid Report Statistics'];
 
+
+
+
+
 export const data = {
     labels,
     datasets: [

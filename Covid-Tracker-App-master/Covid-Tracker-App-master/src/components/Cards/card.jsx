@@ -1,23 +1,36 @@
-// import React, { useEffect, useState } from 'react'
-// import Card from 'react-bootstrap/Card';
-import { Card, CardContent, Grid, Typography } from '@mui/material'
-// import style from './styles.module.css'
+import React, { useEffect, useState } from 'react'
+import {  CardContent, Grid, Typography } from '@mui/material'
+import styles from './styles.module.css'
+
+
+
+
+
+
+
+
 
 const CardMain = ({ data: { TotalConfirmed,TotalDeaths, TotalRecovered }}) => {
 
 
-    console.log(TotalConfirmed, "card console")
-    // let [ApiData, setApiData] = useState([]);
+    let [ApiData, setApiData] = useState([]);
 
-    // async function ApiCall() {
-    //     const getData = await fetch('https://api.covid19api.com/summary')
-    //     let data = await getData.json()
-    //     setApiData(data)
-    // }
+    const ApiCall = async () => {
+        const getData = await fetch('https://api.covid19api.com/summary')
+        let data = await getData.json()
+        setApiData(data)
+        console.log(data)
+    }
 
-    // useEffect ( () => {
-    //     ApiCall()
-    // }, [])
+    useEffect(() => {
+        ApiCall()
+    }, [])
+
+
+
+
+
+
 
     return (
 
